@@ -1,42 +1,72 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-.nav-bar{
-  background-color:#1c1c1c;
-  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-bar a{
-float: right;
-color: #DAA520;
+body {
+
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  }
+
+nav{
+background-color:#1c1c1c;
+overflow: hidden;
+
+width: 100%;
+
+display: flex;
+position: fixed;
+}
+
+nav a{
+
 text-align: center;
-padding: 14px 25px;
-font-family: 'Roboto', sans-serif;
+padding: 25px 25px;
+font-family: 'Rajdhani', sans-serif;
 text-decoration: none;
 font-size:  17px;
 }
 
-.nav-bar a:hover{
-  background-color: #ffffff;
-  color: black;
+
+
+nav a:hover{
+background-color: #000000;
+
 }
 
-.nav-bar a.initial-page{
-  float: left;
+nav a.initial-page{
+margin-left: 70px;
+float: left;
+color: #DAA520;
+padding: 25px 20px;
+
+text-decoration: none;
+font-size:  18px;
+}
+
+nav a.navigation{
+  margin-left: 250px;
+  text-align: left;
+  float: right;
   color: #DAA520;
-  text-align: center;
-  padding: 14px 25px;
-  font-family: 'Roboto', sans-serif;
+  padding: 25px 25px;
   text-decoration: none;
-  font-size:  17px;
-
-}
+  font-size:  18px;
+  }
 #titulo h1 {
-  width: 228px;
-  height: 50px;
+width: 228px;
+height: 50px;
 
-  background-color:#800000;
+background-color:#800000;
+}
+
+.texto-sobre{
+  font-size: 4;
+  font-family: 'Manrope', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0%;
 }
