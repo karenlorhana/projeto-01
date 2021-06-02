@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- fonte -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a class="initial-page" href="index.html" target="_blank">PÁGINA INICIAL</a>
+            <a class="navigation" href="#about.html">QUEM SOMOS</a>
+            <a class="navigation" href="singup.html">CRIAR CONTA</a>
+            <a class="navigation" href="login.html">ENTRAR</a>
+        </div>
+    </nav>
+    <br>
+    <img class="login-profile" src="images/profile-picture.png" alt="">
+
+    <main>
+        <h2>Entrar no seu perfil</h2>
+
+        <form action="/pagina-processa-dados-do-form" method="post">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" />
+            </div>
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" id="password" />
+            </div>
+            <div class="button">
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+        
+    </main>
+</body>
+
+</html>
