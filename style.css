@@ -27,6 +27,13 @@ h2 {
   width: 100%;
   height: 50px;
 }
+h3 {
+  font-size: 2;
+  font-family: "Manrope", sans-serif;
+  color: #000000;
+  width: 100%;
+  height: 50px;
+}
 
 label {
   font-size: 2;
@@ -98,54 +105,61 @@ nav a.navigation {
 .email {
   height: 50px;
   width: 110px;
-
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
 }
 
-main.container{
-   
-  align-items: center;
-  background: 	#FFDEAD;
-  max-width: 300px;
-  max-height: 40vh;
-  padding: 5rem;
-  box-shadow: 5px 5px 15px #F5DEB3;
-  border-radius: 8px;
-  justify-content: center;
-
+main {
+  margin: 0 auto;
 }
 
-main h2{
+main.container {
+  align-items: center;
+  background: #ffdead;
+  max-width: 300px;
+  max-height: 55vh;
+  padding: 5rem;
+  box-shadow: 5px 5px 15px #f5deb3;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+main h2 {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
   margin-bottom: 2rem;
   position: relative;
 }
 
-.input-field{
+main p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.5;
+  margin-bottom: 2rem;
   position: relative;
 }
-.input-field input{
+
+.input-field {
+  position: relative;
+}
+.input-field input {
   font-family: "Rajdhani", sans-serif;
   font-size: 0.9rem;
-  color: rgba(0,0,0,0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
-form .input-field:first-child{
+form .input-field:first-child {
   margin-bottom: 0.7em;
 }
 
-form input[type="submit"]{
-  margin-left: 0.9em;
+form input[type="submit"] {
   font-family: "Rajdhani", sans-serif;
-  margin-top: 2rem;;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 0.7rem;
-  background:#F4A460;
+  background: #f4a460;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
-
 }
