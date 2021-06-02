@@ -97,7 +97,7 @@ nav a.navigation {
   height: 489px;
 }
 .login-profile {
-  margin: 5%;
+  margin: 2%;
   width: 338px;
   height: 298px;
   margin-bottom: 15px;
@@ -134,9 +134,15 @@ main h2 {
   position: relative;
 }
 
-main p {
+main h3 {
   font-family: "Rajdhani", sans-serif;
-  font-size: 0.5;
+  font-size: 15px;
+  position: relative;
+}
+
+.create-account {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 15px;
   margin-bottom: 2rem;
   position: relative;
 }
