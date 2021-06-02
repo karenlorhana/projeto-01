@@ -80,6 +80,7 @@ nav a.initial-page {
   padding: 25px 20px;
   text-decoration: none;
   font-size: 18px;
+  margin-left: 50px;
 }
 
 nav a.navigation {
@@ -89,12 +90,20 @@ nav a.navigation {
   padding: 25px 25px;
   text-decoration: none;
   font-size: 18px;
+  margin-right: 50px;
 }
 
 .landing-page {
   margin: 3%;
   width: 713px;
   height: 489px;
+}
+
+.about-page {
+  margin: 3%;
+  width: 713px;
+  height: 489px;
+  margin: 20 auto;
 }
 .login-profile {
   margin: 2%;
@@ -104,7 +113,7 @@ nav a.navigation {
 }
 .email {
   height: 50px;
-  width: 110px;
+  width: 600px;
 }
 
 form {
@@ -114,23 +123,36 @@ form {
 
 main {
   margin: 0 auto;
+  width: 100%;
 }
 
 main.container {
   align-items: center;
   background: #ffdead;
-  max-width: 300px;
-  max-height: 55vh;
+  max-width: 370px;
+  max-height: 60vh;
   padding: 5rem;
   box-shadow: 5px 5px 15px #f5deb3;
   border-radius: 8px;
   justify-content: center;
+  width: 100%;
+}
+main.container-singup {
+  align-items: center;
+  background: #ffdead;
+  max-width: 370px;
+  max-height: 65vh;
+  padding: 5rem;
+  box-shadow: 5px 5px 15px #f5deb3;
+  border-radius: 8px;
+  justify-content: center;
+  width: 100%;
 }
 
 main h2 {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -147,6 +169,12 @@ main h3 {
   position: relative;
 }
 
+.login-account {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 15px;
+  margin-bottom: 2rem;
+  position: relative;
+}
 .input-field {
   position: relative;
 }
@@ -155,9 +183,9 @@ main h3 {
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.7);
 }
-form .input-field:first-child {
+/*form .input-field:first-child {
   margin-bottom: 0.7em;
-}
+}*/
 
 form input[type="submit"] {
   font-family: "Rajdhani", sans-serif;
@@ -168,4 +196,19 @@ form input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
+}
+
+form input[type="text"] {
+  align-items: center;
+  font-family: "Rajdhani", sans-serif;
+  width: 220px;
+  height: 30px;
+
+  margin-bottom: 1rem;
+}
+
+form input[type="password"] {
+  align-items: center;
+  width: 220px;
+  height: 30px;
 }
