@@ -46,7 +46,7 @@ label {
 p {
   font-size: 1.4em;
   font-family: "Rajdhani", sans-serif;
-  text-align: center;
+  text-align: justify;
   width: auto;
   height: auto;
   margin-right: 60px;
@@ -106,7 +106,7 @@ nav a.navigation {
   margin: 20 auto;
 }
 .login-profile {
-  margin: 2%;
+  margin: 4%;
   width: 338px;
   height: 298px;
   margin-bottom: 15px;
@@ -130,7 +130,7 @@ main.container {
   align-items: center;
   background: #ffdead;
   max-width: 370px;
-  max-height: 60vh;
+  max-height: 53vh;
   padding: 5rem;
   box-shadow: 5px 5px 15px #f5deb3;
   border-radius: 8px;
@@ -141,7 +141,7 @@ main.container-singup {
   align-items: center;
   background: #ffdead;
   max-width: 370px;
-  max-height: 65vh;
+  max-height: 58vh;
   padding: 5rem;
   box-shadow: 5px 5px 15px #f5deb3;
   border-radius: 8px;
@@ -164,14 +164,14 @@ main h3 {
 
 .create-account {
   font-family: "Rajdhani", sans-serif;
-  font-size: 15px;
-  margin-bottom: 2rem;
+  font-size: 18px;
+  margin-bottom: 10rem;
   position: relative;
 }
 
 .login-account {
   font-family: "Rajdhani", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 2rem;
   position: relative;
 }
