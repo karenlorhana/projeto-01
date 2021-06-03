@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <script type="text/javascript" src="validacaoSingup.js"></script>
 </head>
 
 <body>
@@ -29,9 +31,9 @@
         <main class="container-singup">
         
             <h2>Criar conta</h2>
-            <form action="">
+            <form method="POST" id="form" name="form"  action=""  onsubmit="return(validarSingup())">
                 <div class="input-field">
-                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+                    <input type="text" name="name" id="name" placeholder="Insira seu nome">
                     <div class="underline"></div>
                 </div>
                 <div class="input-field">
@@ -42,7 +44,7 @@
                     <input type="password" name="password" id="password" placeholder="Insira sua senha">
                     <div class="underline"></div>
                 </div>
-                <input type="submit" value="Criar conta">
+                <button type="submit" class="submit" onclick="validarSingup()">CRIAR CONTA</button>
             </form>
         
             <h3>Já tem uma conta?</h3>

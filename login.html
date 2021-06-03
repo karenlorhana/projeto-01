@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
     <link href="style.css" rel="stylesheet">
     <!-- fonte -->
@@ -11,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" />
+    <script type="text/javascript" src="validacaoLogin.js"></script>
 </head>
 
 <body>
@@ -25,10 +28,10 @@
     <br>
     <img class="login-profile" src="images/profile-picture.png" alt="">
 
-    <main class="container">
+    <main class="container-login">
 
         <h2>Login</h2>
-        <form action="">
+        <form method="POST" id="form" name="form"  action=""  onsubmit="return(validarLogin())"> 
             <div class="input-field">
                 <input type="text"  name="email" id="email" placeholder="Insira seu email">
                 <div class="underline"></div>
@@ -37,15 +40,14 @@
                 <input type="password" name="password" id="password" placeholder="Insira sua senha">
                 <div class="underline"></div>
             </div>
-            <input type="submit" value="Entrar">
+             <!--<input type="submit" value="Entrar">-->
+             <button type="submit" class="submit"   onclick="validarLogin()">Entrar</button>
 
             <h3>Não tem uma conta?</h3>
             <a class="create-account" href="singup.html">Cadastre-se</a>
         </form>
-            <br><br><br>
-
     </main>
-
+<br><br><br>
 
 
 </body>
