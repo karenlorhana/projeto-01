@@ -1,0 +1,346 @@
+$navbar-font-color: #daa520;
+$navbar-color: #1c1c1c;
+$container-color: #ffdead;
+$button-color: #f4a460;
+$text-color: #000000;
+
+@mixin box-shadow() {
+    box-shadow: 5px 5px 15px #f5deb3;
+}
+body{
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html{scroll-behavior: smooth;}
+
+h1, h2, h3{
+    font-family: "Rajdhani", sans-serif;
+    font-size: 2;
+    color: $text-color;
+    width: 100%;
+    height: 50px;
+}
+
+p {
+    font-size: 1.4em;
+    font-family: "Rajdhani", sans-serif;
+    text-align: justify;
+    width: auto;
+    height: auto;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+main h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+main h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  position: relative;
+}
+main a {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 15px;
+  width: 100%;
+  position: relative;
+}
+
+
+/* <nav-bar> */
+.nav-bar{
+    overflow: hidden;
+    align-items: center;
+    background-color: $navbar-color;
+    width: 100%;
+    max-width: 100%;
+    height: 65px;
+
+    a{
+        font-family: "Rajdhani", sans-serif;
+        float: left;
+        display: block;
+        color: $navbar-font-color;
+        padding: 23px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        height: 70px;
+    }
+    a.initial-page {
+        margin-left: 45px;
+    }
+    a:hover {
+        background-color: $text-color;
+        color: $navbar-font-color;
+    }
+    .icon {
+        display: none;
+}   
+}
+/* </nav-bar> */
+
+/* <images> */
+.landing-page {
+    max-width: 100%;
+    width: 713px;
+    height: 395px;
+}
+.about-page {
+    margin-top: 3%;
+    width: 613px;
+    height: 410px;
+    margin: 20 auto;
+    max-width: 100%;
+}
+.login-profile {
+    width: 338px;
+    height: 298px;
+    margin-bottom: 15px;
+    margin: 20 auto;
+}
+/* </images> */
+
+/* <form> */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* <container> */
+.container-login {
+    @include box-shadow();
+    background: $container-color;
+    max-width: 370px;
+    max-height: 350px;
+    padding: 5rem;
+    border-radius: 8px;
+    width: 100%;
+
+    h2{
+        margin-top: 1px;
+    }
+}
+.container-singup {
+    @include box-shadow();
+    background: $container-color;
+    max-width: 370px;
+    max-height: 390px;
+    padding: 5rem;
+    border-radius: 8px;
+    width: 100%;
+}
+.create-account {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10rem;
+  position: relative;
+}
+.login-account {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10rem;
+  position: relative;
+}
+.input-field {
+  position: relative;
+  width: 360px;
+}
+.input-singup {
+  position: relative;
+  width: 360px;
+}
+input .input-field {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 30px;
+}
+button[type="submit"] {
+  font-family: "Rajdhani", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+  background: $button-color;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+}
+button .submit-login[type="submit"] {
+  font-family: "Rajdhani", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+  background: $button-color;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+}
+form ::placeholder {
+  font-family: "Rajdhani", sans-serif;
+}
+input[type="text"] {
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+input[type="password"] {
+  width: 100%;
+  height: 30px;
+}
+/* </container> */
+
+/* </form> */
+
+/* <responsive> */
+
+@media screen and (max-width: 600px) {
+  .nav-bar a:not(:first-child) {
+    display: none;
+  }
+  .nav-bar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar.responsive {
+    position: relative;
+  }
+  .nav-bar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-bar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .nav-bar.responsive a.initial-page {
+    float: none;
+    display: block;
+    margin-left: 10px;
+  }
+
+  body .container-login {
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-width: 370px;
+    max-height: 390px;
+
+    main h2{
+        margin: 100px;
+    }
+  }
+  body .container-singup {
+    font-family: "Manrope", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #ffdead;
+    max-width: 153px;
+    max-height: 390px;
+    padding: 5rem;
+    border-radius: 8px;
+    
+  }
+
+  form .input-field {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 153px;
+    margin-left: 80px;
+  }
+  form .input-singup {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 145px;
+  }
+  form .initial-page {
+  margin-left: 45px;
+}
+  form button[type="submit"] {
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    background: #f4a460;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 155px;
+  }
+  form button[type="submit"] {
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    background: #f4a460;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 155px;
+  }
+  button .submit-login[type="submit"] {
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    background: #f4a460;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 155px;
+    margin-left: 200px;
+  }
+
+  body .landing-page {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  body .login-profile {
+    width: 150px;
+    height: 130px;
+    margin-bottom: 15px;
+    margin: 20 auto;
+  }
+
+  body .about-page {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin: 20 auto;
+  }
+  
+}
+
+
+/* </responsive> */

@@ -22,16 +22,12 @@
     display: block;
     text-align: center;
   }
-  .nav-bar.responsive a.initial-page {
+  .nav-bar.responsive .initial-page {
     float: none;
     display: block;
     margin-left: 10px;
   }
-  .nav-bar.responsive a.initial-page {
-    float: none;
-    display: block;
-    margin-left: 10px;
-  }
+ 
 
   body .container-login {
     font-family: "Manrope", sans-serif;
@@ -45,24 +41,16 @@
   }
   body .container-singup {
     font-family: "Manrope", sans-serif;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     padding: 0;
     margin: 0;
-    max-width: 370px;
-    max-height: 390px;
-  }
-  body .container-singup {
-    align-items: center;
     background: #ffdead;
     max-width: 153px;
     max-height: 390px;
     padding: 5rem;
-    box-shadow: 5px 5px 15px #f5deb3;
     border-radius: 8px;
-    justify-content: center;
+    
   }
+ 
 
   form .input-field {
     position: relative;
@@ -166,7 +154,7 @@
 
 /* ------------------ */
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -178,27 +166,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
-h1 {
+h1, h2, h3 {
   font-size: 2;
-  font-family: "Manrope", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   color: #000000;
   width: 100%;
   height: 50px;
 }
-h2 {
-  font-size: 2;
-  font-family: "Manrope", sans-serif;
-  color: #000000;
-  width: 100%;
-  height: 50px;
-}
-h3 {
-  font-size: 2;
-  font-family: "Manrope", sans-serif;
-  color: #000000;
-  width: 100%;
-  height: 50px;
-}
+
+
 /*
 label {
   font-size: 2;
@@ -237,10 +213,10 @@ p {
   margin-bottom: 15px;
   margin: 20 auto;
 }
-.email {
+/*.email {
   height: 50px;
   width: 600px;
-}
+}*/
 
 form {
   display: flex;
@@ -270,10 +246,10 @@ main {
   padding: 5rem;
   box-shadow: 5px 5px 15px #f5deb3;
   border-radius: 8px;
-  justify-content: center;
   width: 100%;
 }
 
+/* ---------- */
 main h2 {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
@@ -293,6 +269,8 @@ main a {
   width: 100%;
   position: relative;
 }
+/* ---------- */
+
 
 .create-account {
   font-family: "Rajdhani", sans-serif;
