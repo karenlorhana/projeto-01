@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Sing Up</title>
-    <link href="style.css" rel="stylesheet" />
-    <!-- fonte -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
-      rel="stylesheet"
-    />
-    <!--favicon-->
-    <link rel="shortcut icon" href="images/favicon.ico" />
 
-    <script type="text/javascript" src="validacaoSingup.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Página Inicial </title>
+  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <nav>
-      <div>
-        <a class="initial-page" href="index.html">PÁGINA INICIAL</a>
-        <a class="navigation" href="about.html">SOBRE NÓS</a>
-        <a class="navigation" href="singup.html">CRIAR CONTA</a>
-        <a class="navigation" href="login.html">ENTRAR</a>
+  <!-- fonte -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+  <!--favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="validacaoLogin.js"></script>
+  <script type="text/javascript" src="validacaoSingup.js"></script>
+  <script type="text/javascript" src="navbar.js"></script>
+
+</head>
+
+<body>
+  <!--
+  <nav>
+    <div>
+      <a class="initial-page" href="index.html">PÁGINA INICIAL</a>
+      <a class="navigation" href="about.html">SOBRE NÓS</a>
+      <a class="navigation" href="singup.html">CRIAR CONTA</a>
+      <a class="navigation" href="login.html">ENTRAR</a>
+    </div>
+  </nav>-->
+  <nav>
+    <div class="nav-bar" id="nav-bar">
+      <a href="index.html">PÁGINA INCIAL</a>
+      <a href="login.html">ENTRAR</a>
+      <a href="singup.html">CRIAR CONTA</a>
+      <a href="about.html">SOBRE</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <br>
+
+  <img class="login-profile" src="images/profile-picture.png" alt="">
+
+  <main class="container-singup">
+
+    <h2>Criar conta</h2>
+    <form method="POST" id="form" name="form" action="" onsubmit="return(validarSingup())">
+      <div class="input-singup">
+        <input type="text" name="name" id="name" placeholder="Insira seu nome">
+        <div class="underline"></div>
       </div>
-    </nav>
-    <br />
+      <div class="input-singup">
+        <input type="text" name="email" id="email" placeholder="Insira seu email">
+        <div class="underline"></div>
+      </div>
+      <div class="input-singup">
+        <input type="password" name="password" id="password" placeholder="Insira sua senha">
+        <div class="underline"></div>
+      </div>
+      <button type="submit" class="submit">CRIAR CONTA</button>
+    </form>
 
-    <img class="login-profile" src="images/profile-picture.png" alt="" />
+    <h3>Já tem uma conta?</h3>
+    <a class=" login-account" href="login.html">Entrar</a>
+  </main>
+  <br><br><br>
 
-    <main class="container-singup">
-      <h2>Criar conta</h2>
-      <form
-        method="POST"
-        id="form"
-        name="form"
-        action=""
-        onsubmit="return(validarSingup())"
-      >
-        <div class="input-field">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Insira seu nome"
-          />
-          <div class="underline"></div>
-        </div>
-        <div class="input-field">
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Insira seu email"
-          />
-          <div class="underline"></div>
-        </div>
-        <div class="input-field">
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Insira sua senha"
-          />
-          <div class="underline"></div>
-        </div>
-        <button type="submit" class="submit">CRIAR CONTA</button>
-      </form>
+</body>
 
-      <h3>Já tem uma conta?</h3>
-      <a class="login-account" href="login.html">Entrar</a>
-    </main>
-    <br /><br /><br />
-  </body>
 </html>

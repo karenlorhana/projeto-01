@@ -4,50 +4,71 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
+    <title>Página Inicial </title>
     <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- fonte -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script type="text/javascript" src="validacaoLogin.js"></script>
+    <script type="text/javascript" src="validacaoSingup.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
+
 </head>
 
 <body>
+    <!--
+  <nav>
+    <div>
+      <a class="initial-page" href="index.html">PÁGINA INICIAL</a>
+      <a class="navigation" href="about.html">SOBRE NÓS</a>
+      <a class="navigation" href="singup.html">CRIAR CONTA</a>
+      <a class="navigation" href="login.html">ENTRAR</a>
+    </div>
+  </nav>-->
     <nav>
-        <div>
-            <a class="initial-page" href="index.html">PÁGINA INICIAL</a>
-            <a class="navigation" href="about.html">SOBRE NÓS</a>
-            <a class="navigation" href="singup.html">CRIAR CONTA</a>
-            <a class="navigation" href="login.html">ENTRAR</a>
+        <div class="nav-bar" id="nav-bar">
+            <a href="index.html" class="initial-page">PÁGINA INCIAL</a>
+            <a href="login.html">ENTRAR</a>
+            <a href="singup.html">CRIAR CONTA</a>
+            <a href="about.html">SOBRE</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
+
     <br>
     <img class="login-profile" src="images/profile-picture.png" alt="">
 
     <main class="container-login">
 
         <h2>Login</h2>
-        <form method="POST" id="form" name="form"  action=""  onsubmit="return(validarLogin())"> 
+        <form method="POST" id="form" name="form" action="" onsubmit="return(validarLogin())">
             <div class="input-field">
-                <input type="text"  name="email" id="email" placeholder="Insira seu email">
+                <input type="text" name="email" id="email" placeholder="Insira seu email">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
                 <input type="password" name="password" id="password" placeholder="Insira sua senha">
                 <div class="underline"></div>
             </div>
-             <!--<input type="submit" value="Entrar">-->
-             <button type="submit" class="submit"   onclick="validarLogin()">Entrar</button>
+            <!--<input type="submit" value="Entrar">-->
+            <button type="submit" class="submit-login">Entrar</button>
 
             <h3>Não tem uma conta?</h3>
-            <a class="create-account" href="singup.html">Cadastre-se</a>
+            <a class=" create-account" href="singup.html">Cadastre-se</a>
         </form>
     </main>
-<br><br><br>
+    <br><br><br>
 
 
 </body>

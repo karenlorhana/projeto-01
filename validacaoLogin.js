@@ -5,11 +5,11 @@ function validarLogin() {
   if (email.value == "" || password.value == "") {
     alert("E-mail ou senha não informados!");
     setTimeout(function () {
-      window.location = "http://127.0.0.1:5500/login.html";
+      window.location = "login.html";
     });
   } else {
     setTimeout(function () {
-      window.location = "http://127.0.0.1:5500/user.html";
+      window.location = "user.html";
     });
   }
 }
