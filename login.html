@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Página Inicial </title>
-    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="css/style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script type="text/javascript" src="validacaoLogin.js"></script>
-    <script type="text/javascript" src="validacaoSingup.js"></script>
-    <script type="text/javascript" src="navbar.js"></script>
+    <script type="text/javascript" src="javascript/validacaoLogin.js"></script>
+    <script type="text/javascript" src="javascript/validacaoSingup.js"></script>
+    <script type="text/javascript" src="javascript/navbar.js"></script>
 
 </head>
 
@@ -52,7 +52,7 @@
     <main class="container-login">
 
         <h2>Login</h2>
-        <form method="POST" id="form" name="form" action="" onsubmit="return(validarLogin())">
+        <form method="POST" id="form" name="form" action="" onload="Init ()"onsubmit="return(validarLogin())">
             <div class="input-field">
                 <input type="text" name="email" id="email" placeholder="Insira seu email">
                 <div class="underline"></div>
@@ -62,7 +62,7 @@
                 <div class="underline"></div>
             </div>
             <!--<input type="submit" value="Entrar">-->
-            <button type="submit" class="submit-login">Entrar</button>
+            <button type="submit" class="submit-login" id="submit-login">Entrar</button>
 
             <h3>Não tem uma conta?</h3>
             <a class=" create-account" href="singup.html">Cadastre-se</a>
