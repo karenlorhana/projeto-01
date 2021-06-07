@@ -64,25 +64,27 @@ main a {
 
 /* <nav-bar> */
 .nav-bar {
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #1c1c1c;
   width: 100%;
-  max-width: 100%;
-  height: 65px;
+  height: 68px;
 }
 
 .nav-bar a {
   font-family: "Rajdhani", sans-serif;
-  float: left;
   display: block;
   color: #daa520;
   padding: 23px 16px;
   text-decoration: none;
   font-size: 17px;
-  height: 70px;
 }
 
 .nav-bar a.initial-page {
@@ -98,11 +100,23 @@ main a {
   display: none;
 }
 
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 /* </nav-bar> */
 /* <images> */
 .landing-page {
-  max-width: 100%;
-  width: 713px;
+  max-width: 713px;
+  width: 100%;
   height: 395px;
 }
 
@@ -256,9 +270,6 @@ input[type="password"] {
 /* </form> */
 /* <responsive> */
 @media screen and (max-width: 600px) {
-  .nav-bar a:not(:first-child) {
-    display: none;
-  }
   .nav-bar a.icon {
     float: right;
     display: block;

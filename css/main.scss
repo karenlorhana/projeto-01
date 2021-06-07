@@ -67,22 +67,20 @@ main a {
 
 /* <nav-bar> */
 .nav-bar{
-    overflow: hidden;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: $navbar-color;
     width: 100%;
-    max-width: 100%;
-    height: 65px;
+    height: 68px;
 
     a{
         font-family: "Rajdhani", sans-serif;
-        float: left;
         display: block;
         color: $navbar-font-color;
         padding: 23px 16px;
         text-decoration: none;
         font-size: 17px;
-        height: 70px;
     }
     a.initial-page {
         margin-left: 45px;
@@ -95,12 +93,18 @@ main a {
         display: none;
 }   
 }
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 /* </nav-bar> */
 
 /* <images> */
 .landing-page {
-    max-width: 100%;
-    width: 713px;
+    max-width: 713px;
+    width: 100%;
     height: 395px;
 }
 .about-page {
@@ -225,9 +229,6 @@ input[type="password"] {
 /* <responsive> */
 
 @media screen and (max-width: 600px) {
-  .nav-bar a:not(:first-child) {
-    display: none;
-  }
   .nav-bar a.icon {
     float: right;
     display: block;
