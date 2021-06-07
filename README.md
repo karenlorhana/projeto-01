@@ -30,7 +30,7 @@
 <li> Novo usuário - newuser.html</li>
 </ul>
 
-<p> Nas páginas "Entrar" e "Criar conta", contém uma pequena verificação com JavaScript que exibe um pop up quando o usuário não preenche os campos corretamente</p>
+<p> Nas páginas "Entrar" e "Criar conta", contém uma pequena verificação com JavaScript que exibe um pop up quando o usuário não preenche os campos corretamente.</p>
 
 <h3> Observaçõea: </h3>
 
