@@ -3,7 +3,7 @@
 <h2> Projeto desenvolvido durante a primeira semana na <b>comerciolivre.com</b> </h2>
 
 <ol> 
-<li> HTML - Semântico </li>
+<li> HTML</li>
   <ol> 
   <li>HTML Semântico</li>
   </ol>
@@ -22,7 +22,7 @@
 <h1> Consiste em 6 páginas simples</h1>
 
 <ul>
-<li> Página inicial - index.html </li>
+<li> Página inicial (landing page) - index.html </li>
 <li> Login - login.html </li>
 <li> Criar conta - signup.html</li>
 <li> Sobre nós - about.html</li>
@@ -34,7 +34,7 @@
 
 <h3> Observaçõea: </h3>
 
-<p> Projeto não está completamente finalizado, ainda existem alguns pontos a serem reorganizados</p>
-<p> Navbar responsiva (mobile) não exibe corretamente </p>
-<p> Faltam ajustes na navbar</p>
-<p> O protótipo das páginas foram criadas no Figma</p>
+<p> Projeto não está completamente finalizado, ainda existem alguns pontos a serem reorganizados;</p>
+<p> Navbar responsiva (mobile) não exibe corretamente; </p>
+<p> Faltam ajustes na navbar;</p>
+<p> O protótipo das páginas foram criadas no Figma.</p>
