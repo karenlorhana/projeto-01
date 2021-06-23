@@ -32,7 +32,7 @@
 
 <p> Nas páginas "Entrar" e "Criar conta", contém uma pequena verificação com JavaScript que exibe um pop up quando o usuário não preenche os campos corretamente.</p>
 
-<h3> Observaçõea: </h3>
+<h3> Observações: </h3>
 
 <p> - Projeto não está completamente finalizado, ainda existem alguns pontos a serem reorganizados;</p>
 <p> - Navbar responsiva (mobile) não exibe corretamente; </p>
